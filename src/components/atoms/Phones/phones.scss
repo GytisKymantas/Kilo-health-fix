@@ -6,8 +6,12 @@
   height: 433px;
   position: relative;
 
+  @media (min-width: 400px) {
+    margin: 0 auto;
+  }
+
   &--1 {
-    @media (min-width: 600px) {
+    @media (min-width: 390px) {
       display: none;
     }
 

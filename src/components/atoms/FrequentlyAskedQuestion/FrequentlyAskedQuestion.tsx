@@ -5,7 +5,7 @@ import ArrowDown from "../../../assets/arrowdown.svg";
 
 interface IFrequentlyAskedQuestion {
   question: string;
-  answer: string;
+  answer?: string | null;
   index?: number;
 }
 
@@ -38,7 +38,7 @@ const FrequentlyAskedQuestion: React.FC<IFrequentlyAskedQuestion> = ({
         )}
       </div>
       {!clicked && <p>{answer}</p>}
-      {index === 2? <span>Your plan will be accessible in Positive Yoga web app with a special link generated after your purchase</span>:null}
+      {/* {index === 2? <span>Your plan will be accessible in <b>Positive Yoga</b> web app with a special link generated after your purchase</span>}:null} */}
     </div>
   );
 };

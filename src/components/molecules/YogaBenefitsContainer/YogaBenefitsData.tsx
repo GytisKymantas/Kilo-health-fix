@@ -15,6 +15,6 @@ export const YogaBenefitsData = [
     text: "Low-intensity but highly-effective workouts",
   },
   {
-    text: "Extra attention to muscle, join and back health",
+    text: "Extra attention to muscle, joint and back health",
   },
 ];

@@ -1,5 +1,10 @@
 @import "../../../styles/base";
 
+.phones__container {
+  @media (min-width: 440px) {
+    margin: 0 auto;
+  }
+}
 .phones__container--header {
   margin: 40px 16px 40px 16px;
 }

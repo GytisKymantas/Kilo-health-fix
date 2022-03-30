@@ -13,7 +13,7 @@ export const FrequentlyAskedQuestionData = [
     {
       question: "How can I cancel my subscription?",
       answer:
-        "You can manage or cancel your subscription by writing our customoer support hello@positiveyoga.app",
+        "You can manage or cancel your subscription by writing our customer support hello@positiveyoga.app",
     },
     {
       question: "Why this program is paid?",
