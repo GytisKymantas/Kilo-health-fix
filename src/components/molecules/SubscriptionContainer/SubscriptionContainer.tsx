@@ -3,18 +3,13 @@ import SubscriptionBox from "../../atoms/SubscriptionBox/SubscriptionBox";
 import Button from "../../atoms/Button/Button";
 import SafetyGuarantee from "../../../assets/safetyguarantee.svg";
 import { SubscriptionBoxData } from "./subscriptionBoxData";
-// import SubscriptionTitle from "../../atoms/SubscriptionTItle/SubscriptionTitle";
 
 import "./subscription-container.scss";
 
-
-
 const SubscriptionContainer = () => {
   const subscriptions = SubscriptionBoxData;
-  // console.log(subscriptions);
   return (
     <div className="subscriptions">
-      {/* <SubscriptionTitle displayTitle={true} /> */}
       <p className="hero__paragraph">
         Choose your plan and get{" "}
         <span className="hero__trial">7 days free trial</span>
@@ -37,16 +32,16 @@ const SubscriptionContainer = () => {
       </div>
       <Button />
       <div className="security__paragraph--container">
-      <p className="security__paragraph">
-        After 7 days free trial subscription payment is automatically charged
-        from your account unless it is cancelled at least 24 hours before the
-        end of the trial period.
-      </p>
-      <p className="security__paragraph">
-        By choosing a payment method you agree to the <a href="#">T&#38;Cs</a>{" "}
-        and <a href="#">Privacy Policy</a>
-      </p>
-      <img src={SafetyGuarantee} alt="securityguarantee" />
+        <p className="security__paragraph">
+          After 7 days free trial subscription payment is automatically charged
+          from your account unless it is cancelled at least 24 hours before the
+          end of the trial period.
+        </p>
+        <p className="security__paragraph">
+          By choosing a payment method you agree to the <a href="#">T&#38;Cs</a>{" "}
+          and <a href="#">Privacy Policy</a>
+        </p>
+        <img src={SafetyGuarantee} alt="securityguarantee" />
       </div>
     </div>
   );

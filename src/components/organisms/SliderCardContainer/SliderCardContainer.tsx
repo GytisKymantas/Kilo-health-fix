@@ -5,7 +5,6 @@ import SliderBullets from "../../atoms/SliderBullets/SliderBullets";
 import { SliderCardData } from "./SliderCardData";
 
 const slider = SliderCardData;
-// console.log(slider);
 
 const SliderCardContainer = () => {
   const [index, setIndex] = useState(0);
@@ -24,6 +23,7 @@ const SliderCardContainer = () => {
       <h2 className="slider__header">Hear success stories from our clients</h2>
       {slider && (
         <SliderCard
+        key={index}
           index={index}
           address={slider[index].address}
           image={slider[index].image}

@@ -5,7 +5,7 @@ interface IButton {
   displayButton?: boolean;
 }
 
-const Button:React.FC<IButton> = ({ displayButton }) => {
+const Button: React.FC<IButton> = ({ displayButton }) => {
   return (
     <div className="button__container">
       {displayButton ? (

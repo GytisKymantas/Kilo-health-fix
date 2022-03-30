@@ -12,12 +12,13 @@
 .discount__container {
   background: $color-teal;
   color: $color-white;
-
-  &--image {
-    position: absolute;
-    left: 18px;
-  }
 }
 .discount {
-  font-size: 15px;
+  font-size: $font-size-medium;
+}
+.image__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
 }

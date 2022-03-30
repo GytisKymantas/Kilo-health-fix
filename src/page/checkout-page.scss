@@ -21,10 +21,8 @@
 .main__grid {
   @media (min-width: 1200px) {
     display: grid;
-    // grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: baseline;
-    // margin-bottom: 100px;
   }
 }
 @media (min-width: 1200px) {
@@ -47,6 +45,5 @@
   display: none;
   @media (min-width: 1200px) {
     display: contents;
-    // display: flex;
   }
 }

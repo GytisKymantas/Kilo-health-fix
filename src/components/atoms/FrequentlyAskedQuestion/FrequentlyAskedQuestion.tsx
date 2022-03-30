@@ -6,15 +6,21 @@ import ArrowDown from "../../../assets/arrowdown.svg";
 interface IFrequentlyAskedQuestion {
   question: string;
   answer: string;
+  index?: number;
 }
 
 const FrequentlyAskedQuestion: React.FC<IFrequentlyAskedQuestion> = ({
   question,
   answer,
+  index,
 }) => {
+  console.log(index);
   const [clicked, setClicked] = useState(false);
   return (
-    <div className="frequently-asked-question__container" onClick={() => setClicked(!clicked)}>
+    <div
+      className="frequently-asked-question__container"
+      onClick={() => setClicked(!clicked)}
+    >
       <div className="question">
         <h4>{question}</h4>
         {clicked ? (
@@ -31,7 +37,8 @@ const FrequentlyAskedQuestion: React.FC<IFrequentlyAskedQuestion> = ({
           />
         )}
       </div>
-      {!clicked &&<p>{answer}</p> }
+      {!clicked && <p>{answer}</p>}
+      {index === 2? <span>Your plan will be accessible in Positive Yoga web app with a special link generated after your purchase</span>:null}
     </div>
   );
 };

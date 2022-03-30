@@ -3,19 +3,14 @@
 .slider__header {
   margin-top: 30px;
   margin-bottom: 24px;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-big;
   line-height: 28px;
   text-align: center;
 }
 
 .slider {
   margin: 0 16px 0 16px;
-
-  // @media (min-width: 600px) {
-  //   display: flex;
-  //   margin-top: 100px;
-  // }
 }
 .slider--hidden {
   margin-top: 48px;

@@ -7,21 +7,19 @@ import { BulletArrayData } from "./BulletArrayData";
 const bullets = BulletArrayData;
 
 interface ISliderBullets {
-  index:number;
+  index: number;
 }
 
-const SliderBullets:React.FC<ISliderBullets> = ({index}) => {
+const SliderBullets: React.FC<ISliderBullets> = ({ index }) => {
   return (
     <div className="bullet__container">
       {bullets.map((bullet, idx) => (
-              <img
-                key={bullet}
-                src={
-                  index === idx ? SliderBulletFull : SliderBulletBlank
-                }
-                alt={index === idx ? "selected point" : "bullet point"}
-              />
-            ))}
+        <img
+          key={bullet}
+          src={index === idx ? SliderBulletFull : SliderBulletBlank}
+          alt={index === idx ? "selected point" : "bullet point"}
+        />
+      ))}
     </div>
   );
 };

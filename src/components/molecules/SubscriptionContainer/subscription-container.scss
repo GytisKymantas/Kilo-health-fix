@@ -13,8 +13,8 @@
 }
 
 .hero__paragraph {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-big;
   line-height: 28px;
   margin: 24px 0 16px 0;
 }
@@ -25,8 +25,8 @@
 }
 
 .security__paragraph {
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-smallest;
   line-height: 18px;
   text-align: center;
   margin: 16px 0 16px 0;

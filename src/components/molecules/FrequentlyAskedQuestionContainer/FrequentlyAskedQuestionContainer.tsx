@@ -5,6 +5,7 @@ import { FrequentlyAskedQuestionData } from "./FrequentyAskedQuestionData";
 
 const FrequentlyAskedQuestionContainer = () => {
   const questions = FrequentlyAskedQuestionData;
+  let nr = 1;
 
   return (
     <div className="FAQ">
@@ -15,6 +16,7 @@ const FrequentlyAskedQuestionContainer = () => {
             key={idx}
             question={question.question}
             answer={question.answer}
+            index={nr++}
           />
         );
       })}
