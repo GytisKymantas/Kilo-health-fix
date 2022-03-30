@@ -1,3 +1,12 @@
+
+
+Due to unforeseen bugs while trying to implement libraries, I had to create a new repository. The original one
+https://github.com/GytisKymantas/Kilo-Health containing all the used commits throughout the whole process of development. Thank You.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
