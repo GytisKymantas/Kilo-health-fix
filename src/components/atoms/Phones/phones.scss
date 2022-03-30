@@ -1,0 +1,29 @@
+@import "../../../styles/base";
+
+.phones__container {
+  // background-image: url("../../../assets/diagonal.svg");
+  width: 375px;
+  height: 433px;
+  position: relative;
+
+  &--1 {
+    @media (min-width: 600px) {
+      display: none;
+    }
+
+    img {
+      position: absolute;
+      top: -33px;
+      left: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &--2 {
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

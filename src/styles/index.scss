@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@import "./base";
+
+$font-family-pro: "Source Sans Pro", sans-serif;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: $color-white;
+  color: $color-black;
+  font-family: $font-family-pro;
+  min-height: 100vh;
+}

@@ -1,0 +1,23 @@
+@import "../../../styles/base";
+
+.header {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  height: 56px;
+  min-width: 375px;
+}
+
+.discount__container {
+  background: $color-teal;
+  color: $color-white;
+
+  &--image {
+    position: absolute;
+    left: 18px;
+  }
+}
+.discount {
+  font-size: 15px;
+}

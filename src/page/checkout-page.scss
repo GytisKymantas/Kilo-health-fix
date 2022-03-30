@@ -1,0 +1,52 @@
+@import "../styles/base";
+
+.checkout__page {
+  margin: 16px 0 65px 0;
+
+  @media (min-width: 800px) {
+    margin: 0 20%;
+  }
+}
+
+.hero__grid {
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &--bottom {
+    margin-bottom: 118px;
+  }
+}
+
+.main__grid {
+  @media (min-width: 1200px) {
+    display: grid;
+    // grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: baseline;
+    // margin-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .yogabenefits__container {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+  }
+  .phones__container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+.slide-container__visible {
+  @media (min-width: 1200px) {
+    display: none !important;
+  }
+}
+.slide-container__hidden {
+  display: none;
+  @media (min-width: 1200px) {
+    display: contents;
+    // display: flex;
+  }
+}
